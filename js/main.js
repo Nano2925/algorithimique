@@ -28,6 +28,23 @@ console.log(uneVariable)
 let helloworld = 'Hello, World'
 
 console.log(helloworld)
+//les differents types de variables
+let messages = 'un message';
+let number = 20;
+let decimal = 20.5;
+let boolean = true;
+let boolean2 = false;
+
+// les opérations arithmétiques
+// Déclarer 3 variables sum, number1 , number2
+//Affecter le nombre 10 à number1
+// Affecter le nombre 20 à number2
+// Affecter à sum l'operation de multiplication des 2 variables précédents
+let sum;
+let number1 = 10;
+let number2 = 20;
+sum = number1*number2;
+console.log(sum);
 
 /* ----------------------------------------- La Concatenation ----------------------------------*/
 let firstName = 'manoj'
