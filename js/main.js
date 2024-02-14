@@ -13,6 +13,10 @@
 //Afficher des informations dans la consonle de debbugage du navigateur
 console.log('hello, World') 
 
+prompt('Quel est votre age?')
+
+
+
 /* --------------------------------------- Les Variables ------------------------------------*/
 // Declarer d'une variable
 let uneVariable
@@ -59,5 +63,7 @@ console.log("je m'appelle"+ firstName + lastName);
  city = "paris"
 
  console.log(`j'adore vivre à ${city}`)
- console.log(`j'adore vivre à ${city} et je m'appelle ${firstName} ${lastName}`)
+ console.log(`je m'appelle ${firstName} ${lastName} et j'adore vivre à ${city}}`)
+
+
  
