@@ -1,12 +1,8 @@
-/* ------------------------------------ Les Commentaires ------------------------------------*/
-// un comaintaire
-
-/*  
-    un commentaire multiligne 
-    en javascript 
-*/
-
-/* ------------------------------------------- Affichage ------------------------------------*/
+// ------------------------------------ Les Commentaires ------------------------------------
+// un comaintair//
+//  //  un commentaire multiligne //  en javascript
+//
+// ------------------------------------------- Affichage ------------------------------------
 
 //Afficher des informations dans la consonle de debbugage du navigateur
 console.log("hello, World");
@@ -15,8 +11,10 @@ console.log("hello, World");
 //let reponse = prompt('Quel est votre age?')
 //console.log(reponse)
 
-/* --------------------------------------- Les Variables ------------------------------------*/
+// --------------------------------------- Les Variables ------------------------------------
 // Declarer d'une variable
+
+/*
 let uneVariable;
 
 // Affectation d'une variable
@@ -47,7 +45,7 @@ let number2 = 20;
 sum = number1 * number2;
 console.log(sum);
 
-/* ----------------------------------------- La Concatenation ----------------------------------*/
+----------------------------------------- La Concatenation ----------------------------------
 let firstName = "manoj";
 let lastName = "gnanavel";
 
@@ -87,10 +85,6 @@ if (agree == "ok") {
 //Vous ne pouvez pas acceder au site
 
 
-
-
-
-/*
 let accept = prompt("langue du site");
 if (accept == "yes") {
   console.log("vous etes dirigé vers le site en anglais");
@@ -139,8 +133,6 @@ if (age <= 13) {
 } else if (age >= 18){
     console.log('evil dead')
 }
-*/
-
 
 
 
@@ -151,32 +143,61 @@ if (age <= 13) {
 //et qu'il a moins de 18 ans 
 // Assistance juridique gratuite
 
-//nationalite = prompt ('nationalite')
-//let age = prompt('quel est ton age')
-//let nationalite = prompt('quelle est votre naionalite')
-//if (nationalite == 'francais' && age >= 18 ||nationalite != 'francais' && age < 18){
-//    console.log('vous avez le droit à une assstance juridique')
-//}
-
+let age = prompt('quel est ton age')
+let nationalite = prompt('quelle est votre naionalite')
+if (nationalite == 'francais' && age >= 18 ||nationalite != 'francais' && age < 18){
+    console.log('vous avez le droit à une assstance juridique')
+}
 
 // Demande sa nationalité
 // si il est français
-  // Demander à l'utilisateur son age
-  // si il a plus de 18 ans 
-  //droit au APL
-// sinon 
-  // vous n'avez aucun droit
+// Demander à l'utilisateur son age
+// si il a plus de 18 ans
+//droit au APL
+// sinon
+// vous n'avez aucun droit
 
-let nationalite = prompt('quelle est votre nationalité')
-let age = prompt('quel est votre age')
+*/
 
-if (nationalite == 'francais' && age >= 18){
-  console.log('vous avez le droit au Apl')
-}else{
-  console.log('vous n\'avez aucune droit')
-}
+//let nationalite = prompt("quelle est votre nationalité");
+//if (nationalite == "francais"){
+//  let age = prompt("quel est votre age");
+//  if (age >= 18)
+//    console.log("vous avez le droit au Apl");
+//  } else {
+//    console.log("vous n'avez aucune droit");
+//
+//}
+
+//----------------------------------------Les boucles-----------------------------------------
+
+// Les boucles sont des structures permettant d'executer plusieurs fois des instructions
+
+// Boucle à iteration non definies (while)
+
+//let i = 0
+//while(i<9){
+//  i=i+1
+//  console.log(i);
+//}
+
+//
+
+// Afficher la table de  multipillcation de 7
+
+//let a = 0;
+//while (a < 10) {
+//  let res = a * 7;
+//  console.log(`${a} x 7 = ${res}`);
+//  a = a = 1}  
 
 
- 
 
-
+// Ecire un algorithme qui inverse les valeurs de deux variables A et B quel que soit le contenu de A et de B
+let a = 10
+let b = 99
+console.log(a, b)
+let temp = a
+a= b
+b= temp 
+console.log(a, b)
