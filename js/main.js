@@ -45,7 +45,7 @@ let number2 = 20;
 sum = number1 * number2;
 console.log(sum);
 
------------------------------------------ La Concatenation ----------------------------------
+// ----------------------------------------- La Concatenation ----------------------------------
 let firstName = "manoj";
 let lastName = "gnanavel";
 
@@ -124,20 +124,20 @@ if (variable >=16){
 // "evil dead" si il a plus de 18 ans
 
 
-let age = prompt('saisir votre age')
-
-if (age <= 13) {
-    console.log('action man')
-} else if (age >= 13 && age <= 18 ){   
-    console.log('matrix')
-} else if (age >= 18){
-    console.log('evil dead')
-}
+// let age = prompt('saisir votre age')
+// 
+// if (age <= 13) {
+    // console.log('action man')
+// } else if (age >= 13 && age <= 18 ){   
+    // console.log('matrix')
+// } else if (age >= 18){nationalit
+    // console.log('evil dead')
+// }
 
 
 
 // Demander à l'utilisateur 
-// sa nationalité
+// sa 0é
 
 // Si il est français et qu'il a plus de 18 ans ou s'il est etranger et qu'il est etranger
 //et qu'il a moins de 18 ans 
@@ -157,7 +157,7 @@ if (nationalite == 'francais' && age >= 18 ||nationalite != 'francais' && age < 
 // sinon
 // vous n'avez aucun droit
 
-*/
+
 
 //let nationalite = prompt("quelle est votre nationalité");
 //if (nationalite == "francais"){
@@ -182,22 +182,155 @@ if (nationalite == 'francais' && age >= 18 ||nationalite != 'francais' && age < 
 //}
 
 //
+*/
 
 // Afficher la table de  multipillcation de 7
 
-//let a = 0;
-//while (a < 10) {
-//  let res = a * 7;
-//  console.log(`${a} x 7 = ${res}`);
-//  a = a = 1}  
-
-
+// let i = 0;
+// while (i < 10) {
+//  let res = i * 7;
+// }
+//  console.log(`${i} x 7 = ${res}`);
 
 // Ecire un algorithme qui inverse les valeurs de deux variables A et B quel que soit le contenu de A et de B
-let a = 10
-let b = 99
-console.log(a, b)
-let temp = a
-a= b
-b= temp 
-console.log(a, b)
+//let a = 10
+//let b = 99
+//console.log(a, b)
+//let temp = a
+//a= b
+//b= temp
+//console.log(a, b)
+
+// Declarer vos revenus de 20000 euros
+// Tant que vos revenu ne sont pas superieur a 30000 euros
+// chaque année mes revenus augmennte de 10%
+// Au Bout de combien d'année mes revenus dépasseront 30000 euros
+
+let revenu = 20000;
+let yea = 0;
+
+while (revenu < 30000) {
+  revenu = revenu + revenu * 0.1;
+  yea = yea + 1;
+}
+
+console.log(`il faudra ${yea} années, mon revenu sera de ${revenu}`);
+
+// La population de la vile Marrakech est de 1, 000, 000 d'habitants et elle augmente de 50, 000 par an.
+// La Population de la ville Agadir est  de 500, 000 habitants et elle augmente de 8% par an.
+// Ecrire un algo permettant de déterminer dans combien d' années la population de la ville Agadir déparrera
+// Celle de la ville Marrakech
+
+let marrakech = 1000000;
+let agadir = 500000;
+let year = 0;
+while (agadir < marrakech) {
+  agadir = agadir * 1.08;
+  marrakech = marrakech + 50000;
+  year++;
+  // year = year + 1
+  // year +=1
+}
+console.log(`il faudra ${year} années avant que..`);
+
+// Boucle à iteration definies  (for)
+for (let i = 1; i < 11; i++) {
+  let res = i * 10;
+  console.log(`${i} x 10 = ${res}`);
+}
+// Ecrire un algo qui fait deviner un chiffre à l'utilisateur en lui indiquant si il est au dessus
+// ou au dessous de la bonne valeur
+
+// Demande à l'utilisateur un nombre
+// Tant que la rponse n'est pas bonne12
+// Si sa chiffre est inférieur au chiffre magique
+// Le nombre magique est plus grand, donne moi une autre réponse
+// Sinon
+// Le nombre magique est plus petit , donne moi une autre réponse15
+// Le nombre magique était bien
+
+// let mag = prompt("trouve la numero magique");
+// let n1 = 12;
+// if (mag > n1) {
+// console.log("le nombre est plus grand donne une autre réponse");
+// }
+// if (mag < n1) {
+// console.log("le nombre est plus petit donne une autre réponse");
+// } else if (mag === n1) {
+// console.log("le nombre magique etait bien");
+// }
+
+// Correction
+
+// let magic = 135;
+// let res = prompt("Donne Moi Ta Réponse");
+
+// while (res != magic) {
+//   if (res < magic) {
+//     res = prompt("trop petit");
+//   } else {
+//     res = prompt("trop grand");
+//   }
+// }
+// console.log('bravo')
+
+
+// ---------------------------------------Les Fonctions--------------------------------------------
+
+// Une Fonction est un block d'instructions réutilisable 
+// Elle peut prendre des parametres
+// Elle est déclarée avec le mot clé function
+
+function helloWorld(){
+  console.log('Hello World')
+}
+
+
+function calculNasa(){
+    let resu = 25
+    let essence = 65
+    let anneeLumiere = 856
+    let solution = resu*essence/anneeLumiere*75
+
+    return solution
+}
+let solution = calculNasa
+
+
+
+// Ecrire une Fonction qui affiche bonjour 
+
+function BonJour(){
+  console.log('Bonjour!')
+}
+BonJour()
+BonJour()
+BonJour()
+
+
+// Ecrire une fonction qui prend un parametre et qui affiche bonjour [le prénom pasée en parametre]
+
+function BienVenue(name){
+  console.log('Bonjour '+ name)
+}
+
+BienVenue('manoj')
+BienVenue('laoe')
+
+
+
+// Ecrire une fonction qui calcule la perimètre d' un carré et l'afficher
+
+function squAre(x, y){
+   
+    console.log('la perimetre du carré est '+ x * y + ' cm') 
+ 
+}
+
+squAre(15, 15)
+
+
+
+
+// Algorithme qui calcule et affiche le carre d'un nombre 
+
